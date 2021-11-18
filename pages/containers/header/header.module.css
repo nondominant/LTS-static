@@ -3,21 +3,30 @@
     top: 0;
     width: 100%;
     margin: 0rem 0rem 15rem 0rem;
-  }
+}
+
 .header_component {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: var(--secondary-color);
+    justify-content: flex-start;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 }
 
 .header_item {
   margin: 1rem 2rem 1rem 2rem;
   padding: 0.5rem;
   font-family: var(--font-main);
-  color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: white;
+
 }
+
+.header_img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
  .buffer {
    margin: 2rem;
    padding: 1rem;

@@ -1,8 +1,8 @@
 html {
-  --primary-color: #a4cdcd;
-  --secondary-color: #e86c09;
-  --embellish-color: #0c4505;
-  --font-main: "Times New Roman";
+  --primary-color: rgba(235,14,61,1);
+  --secondary-color: rgba(0,212,255,1);
+  --embellish-color: rgba(0,212,255,0.2);
+  --font-main: "Helvetica";
   --font-secondary: "Helvetica";
   --font-aux: "Lucida Console";
   --text-color: #ffffff;

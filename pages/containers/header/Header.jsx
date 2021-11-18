@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Brand, ContactBanner } from '../../components';
+import { Brand, ContactBanner, Logo } from '../../components';
 import style from './header.module.css';
 
 
