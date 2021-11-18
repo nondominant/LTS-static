@@ -1,0 +1,11 @@
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.image {
+  margin: 4rem;
+
+}

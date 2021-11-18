@@ -1,8 +1,10 @@
 import React from 'react';
 import gpt3Logo from '../../../public/logo.svg';
+import { EmailLinkBar } from '../../components';
 import style from './footer.module.css';
 
 const Footer = () => (
+  <>
   <div className={style.footer}>
     <div className="gpt3__footer-heading">
       <h1 className="gradient__text">Do you want to step in to the future before others</h1>
@@ -42,6 +44,8 @@ const Footer = () => (
       <p>@2021 GPT-3. All rights reserved.</p>
     </div>
   </div>
+  <EmailLinkBar />
+  </>
 );
 
 export default Footer;

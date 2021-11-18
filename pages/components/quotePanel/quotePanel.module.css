@@ -1,0 +1,12 @@
+.backdrop {
+  background: linear-gradient(90deg, #fff 0%, var(--secondary-color) 80%, #000 100%);
+  padding: 6rem;
+}
+.quote {
+  font-family: var(--font-aux);
+  font-size: 6rem;
+}
+.tagline {
+  font-family: var(--font-secondary);
+  font-size: medium;
+}

@@ -1,22 +1,22 @@
 import React from 'react';
 import { google, slack, atlassian, dropbox, shopify } from './imports.js';
-import styles from './brand.module.css';
+import style from './brand.module.css';
 
 const Brand = () => (
-  <div >
-    <div>
+  <div className={style.brand_container}>
+    <div className={style.brand_item}>
       <img src={google} />
     </div>
-    <div>
+    <div className={style.brand_item}>
       <img src={slack} />
     </div>
-    <div>
+    <div className={style.brand_item}>
       <img src={atlassian} />
     </div>
-    <div>
+    <div className={style.brand_item}>
       <img src={dropbox} />
     </div>
-    <div>
+    <div className={style.brand_item}>
       <img src={shopify} />
     </div>
   </div>

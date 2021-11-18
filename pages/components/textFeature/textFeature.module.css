@@ -1,0 +1,15 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 20rem;
+}
+
+.paragraph {
+  text-align: center;
+  text-justify: auto;
+}
+

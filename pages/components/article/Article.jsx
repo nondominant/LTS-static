@@ -1,17 +1,18 @@
 import React from 'react';
-import styles from './article.module.css';
+import style from './article.module.css';
 
-const Article = ({ imgUrl, date, text }) => (
-  <div className={styles.gpt3__blog-container_article}>
-    <div className={styles.gpt3__blog-container_article-image}>
-      <img src={imgUrl} alt="" />
-    </div>
-    <div className={styles.gpt3__blog-container_article-content}>
-      <div>
-        <p>{date}</p>
-        <h3>{text}</h3>
+const Article = ({ title, textLeft, textRight }) => (
+  <div className={style.panel}>
+      <div className={style.title}>
+        <h2>{title}</h2>
       </div>
-      <p>Read Full Article</p>
+    <div className={style.content}>
+      <div className={style.item}>
+        <p>{textLeft}</p>
+      </div>
+      <div className={style.item}>
+        <p>{textRight}</p>
+      </div>
     </div>
   </div>
 );
