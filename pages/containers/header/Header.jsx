@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Brand, ContactBanner, Logo } from '../../components';
+import { Brand, ContactBanner, Logo, ImagePanel } from '../../components';
 import style from './header.module.css';
 
 
@@ -15,9 +15,7 @@ const Header = () => (
     <Brand />
     <ContactBanner />
   </div>
-  <div className={style.buffer}>
-    <h1>phone number: 0211228247</h1>
-  </div>
+  <ImagePanel />
   </>
 );
 

@@ -1,6 +1,6 @@
-import atlassian from '../../../public/static/atlassian.png';
-import slack from '../../../public/static/slack.png';
-import dropbox from '../../../public/static/dropbox.png';
+import atlassian from '../../../public/static/pics/134.jpg';
+import slack from '../../../public/static/pics/095.jpg';
+import dropbox from '../../../public/static/pics/0167.jpg';
 
 export {
   atlassian,

@@ -1,8 +1,10 @@
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
+    height: 200px;
     width: 100%;
-    margin: 0rem 0rem 15rem 0rem;
+    background-color: green;
+    z-index: 99;
 }
 
 .header_component {
@@ -28,8 +30,6 @@
 }
 
  .buffer {
-   margin: 2rem;
-   padding: 1rem;
  }
 
 

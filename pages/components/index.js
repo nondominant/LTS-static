@@ -8,3 +8,4 @@ export { default as Logo } from './logo/Logo';
 export { default as QuotePanel } from './quotePanel/QuotePanel';
 export { default as TextFeature } from './textFeature/TextFeature';
 export { default as FeaturePanel } from './featurePanel/FeaturePanel';
+export { default as ImagePanel } from './imagePanel/ImagePanel';

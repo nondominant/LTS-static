@@ -4,15 +4,8 @@ import style from './gallery.module.css';
 
 const Gallery = () => (
   <div className={style.panel}>
-    <div className={style.image}>
-      <img src={atlassian}/>
-    </div>
-    <div className={style.image}>
-      <img src={slack}/>
-    </div>
-    <div className={style.image}>
-      <img src={dropbox}/>
-    </div>
+      <img className={style.image_first} src={dropbox}/>
+      <img className={style.image_last} src={dropbox}/>
   </div>
 );
 
