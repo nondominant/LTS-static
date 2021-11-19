@@ -1,5 +1,5 @@
 html {
-  --primary-color: rgba(235,14,61,1);
+  --primary-color: rgba(110,98,78,1);
   --secondary-color: rgba(0,212,255,1);
   --embellish-color: rgba(0,212,255,0.2);
   --font-main: "Helvetica";
@@ -12,3 +12,9 @@ a {
   color: inherit; 
   text-decoration:none;
 }
+
+div {
+  width: 100%;
+  margin: 0rem;
+}
+
