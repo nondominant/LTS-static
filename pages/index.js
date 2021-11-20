@@ -4,7 +4,7 @@ import Image from 'next/image'
 import style from './index.module.css';
 
 import { Header, Footer, ContentPanel, GalleryPanel } from './containers';
-import { Brand, QuotePanel, FeaturePanel, ImagePanel } from './components';
+import { Brand, QuotePanel, FeaturePanel, ImagePanel, Linebreak, FeaturePanel_locations, FeaturePanel_contact} from './components';
 
 export default function Home() {
   return (
@@ -12,11 +12,15 @@ export default function Home() {
     <div className={style.main}>
     <Header />
     <ImagePanel />
-    <FeaturePanel />
-    <FeaturePanel />
+    <div className={style.body}>
+    <ContentPanel />
+    </div>
+    <Linebreak />
+    <div className={style.body}>
+    <GalleryPanel />
+    </div>
+    <Linebreak />
     <Footer />
-    <Footer />
-    <Brand />
     </div>
     </>
   );

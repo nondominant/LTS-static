@@ -1,11 +1,11 @@
 import React from 'react';
-import { Header, Footer } from './containers';
+import { Header, Footer, ContentPanel } from './containers';
 
 export default function About() {
   return (
     <>
     <Header />
-    This is The About page
+    <ContentPanel />
     <Footer />
     </>
   );

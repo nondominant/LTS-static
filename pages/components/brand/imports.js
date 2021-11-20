@@ -1,13 +1,9 @@
-import google from '../../../public/static/google.png';
-import slack from '../../../public/static/slack.png';
-import atlassian from '../../../public/static/atlassian.png';
-import dropbox from '../../../public/static/dropbox.png';
-import shopify from '../../../public/static/shopify.png';
+import lst from '../../../public/static/lst-automation-logo-2019-2b.png';
+import foltex from '../../../public/static/foltex-logo-website.png';
+import alltrack from '../../../public/static/alltrack-logo.png';
 
 export {
-  google,
-  slack,
-  atlassian,
-  dropbox,
-  shopify,
+  alltrack,
+  foltex,
+  lst,
 };

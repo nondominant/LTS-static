@@ -1,10 +1,12 @@
 import React from 'react';
 import style from './textFeature.module.css';
 
-const TextFeature = ({title, content}) => (
+const TextFeature = ({title, content1, content2, content3}) => (
   <div className={style.panel}>
-    <h2>{title}</h2>
-    <p className={style.paragraph}>{content}</p>
+    <h3 className={style.paragraph}>{title}</h3>
+    <p className={style.paragraph}>{content1}</p>
+    <p className={style.paragraph}>{content2}</p>
+    <p className={style.paragraph}>{content3}</p>
   </div>
 );
 
