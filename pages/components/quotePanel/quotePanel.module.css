@@ -1,11 +1,14 @@
 .backdrop {
   position: relative;
   background-color: rgba(100,100,100,0.1);
-  width:100%;
+  width: auto;
+  border-radius: 8px 8px 8px 8px;
+  margin: 3rem 0rem 3rem 0rem;
+  padding: 2rem;
 }
 .quote {
   font-family: var(--font-aux);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .tagline {
   font-family: var(--font-secondary);

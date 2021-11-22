@@ -1,9 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 var nodemailer = require('nodemailer');
-var cors = require('cors');
 const creds = require('./config');
-var listenPort = 3002;
+
 
 var transport = {
   host: 'smtp-mail.outlook.com', 
@@ -20,17 +19,20 @@ transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
-    console.log(`server is ready to take messages on ${listenPort}`);
+    console.log(`server is ready to take messages`);
   }
 });
 
-router.post('/send', (req, res, next) => {
-  console.log('processing mail from index.js');
+
+
+router.post('/contact', (req, res, next) => {
+  console.log('processing mail');
   var name = req.body.name;
   var email = req.body.email;
   var message = req.body.message;
   var content = `name: ${name} \n email: ${email} \n message: ${message}`
 
+  console.log(content);
   var mail = {
     from: name,
     to: 'peter_hooper@hotmail.co.nz',
@@ -60,8 +62,5 @@ router.post('/send', (req, res, next) => {
 });
 
 
-const app = express();
-app.use(cors());
-app.use(express.json);
-app.use('/', router);
-app.listen(listenPort);
+
+module.exports = router;
