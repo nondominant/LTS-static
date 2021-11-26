@@ -46,7 +46,7 @@ router.post('/contact', (req, res, next) => {
     } else {
       res.json({status: 'success'})
         transporter.sendMail({
-              from: "peter_hooper@hotmail.co.nz",
+              from: "automatic_response_h4x6c47m33s63lwdofjd@outlook.com",
               to: email,
               subject: "Submission was successful",
               text: `Thank you for contacting us!\n\nForm details\nName: ${name}\nEmail: ${email}\nMessage: ${message}`

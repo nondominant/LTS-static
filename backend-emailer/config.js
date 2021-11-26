@@ -1,4 +1,5 @@
 module.exports = {
-  USER: 'peter_hooper@hotmail.co.nz',
-  PASS: 're343bnm'
+  USER: 'automatic_response_h4x6c47m33s63lwdofjd@outlook.com',
+  PASS: 'AKx7tqfu6MTXTmU'
+  
 }

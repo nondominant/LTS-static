@@ -14,3 +14,12 @@
   align-items: center;
   width: 60%;
 }
+.bodygrey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--secondary-color);
+}

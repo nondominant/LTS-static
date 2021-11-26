@@ -18,3 +18,8 @@ div {
   margin: 0rem;
 }
 
+input {
+  width: 20rem;
+  height: 2rem;
+  background-color: white;
+}

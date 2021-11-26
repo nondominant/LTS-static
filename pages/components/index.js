@@ -13,3 +13,4 @@ export { default as FeaturePanel } from './featurePanel/FeaturePanel';
 export { default as FeaturePanel_locations } from './featurePanel_locations/FeaturePanel';
 export { default as FeaturePanel_contact } from './featurePanel_contact/FeaturePanel';
 export { default as Form } from './form/Form';
+export { default as Svg_Comp } from './svg_comp/Svg_Comp';
