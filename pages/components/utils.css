@@ -1,0 +1,43 @@
+.menu {
+  opacity: 0;
+
+}
+
+.menu:hover {
+  animation: octopus 2s ease infinite;
+}
+
+@keyframes octopus {
+  0%, 90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.titlez:hover {
+  transform: translate(2px);
+}
+
+/*function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    var txt = entry.target.id + " visibility: " + entry.isIntersecting;
+    
+    document.getElementById('log').appendChild(document.createTextNode(txt));
+    document.getElementById('log').appendChild(document.createElement("br"));
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+
+observer.observe(document.getElementById('firstBlock'));
+observer.observe(document.getElementById('secondBlock'));*/

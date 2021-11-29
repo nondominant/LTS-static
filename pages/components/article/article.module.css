@@ -5,6 +5,7 @@
   justify-content: center;
 }
 .title {
+  composes: titlez from '../utils.css';
   display: flex;
   flex: 0 0 100%;
   justify-content: center;
@@ -20,6 +21,7 @@
 }
 
 .item {
+  composes: titlez from '../utils.css';
   padding: 1rem;
   margin: 1rem;
   max-width: 40%;

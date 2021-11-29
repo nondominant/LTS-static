@@ -16,6 +16,7 @@
 }
 
 .header_item {
+  composes: title_rollover from '../utils.css';
   font-family: var(--font-main);
   font-size: 1.2rem;
   color: black;
