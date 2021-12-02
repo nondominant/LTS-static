@@ -7,15 +7,15 @@ export default function About() {
   return (
         <>                                                                              
     <div className={style.split}>                                                   
-      <div className={style.bodygrey}>                                              
-        <Header />                                                                  
-      </div>                                                                        
       <div className={style.main}>                                                  
         <SpaceBreak />
         <ContentPanel />
         <SpaceBreak />
         <SpaceBreak />
         <Footer />
+      </div>                                                                        
+      <div className={style.bodygrey}>                                              
+        <Header />                                                                  
       </div>                                                                        
     </div>                                                                          
     </>

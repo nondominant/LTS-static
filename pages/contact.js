@@ -8,15 +8,15 @@ export default function contact() {
   return (
     <>                                                                              
     <div className={style.split}>                                                   
-      <div className={style.bodygrey}>                                              
-        <Header />                                                                  
-      </div>                                                                        
       <div className={style.main}>                                                  
         <ContentPanel />
         <Form />
         <SpaceBreak />
         <SpaceBreak />
         <Footer />
+      </div>                                                                        
+      <div className={style.bodygrey}>                                              
+        <Header />                                                                  
       </div>                                                                        
     </div>                                                                          
     </>
