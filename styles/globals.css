@@ -59,7 +59,7 @@ html {
   --font-secondary: 'Comforter', cursive;
   --font-aux: 'Comforter', cursive;
   --text-color: #ffffff;
-  --text-color-alt: #ff0034;
+  --text-color-alt: #8ff0ff;
   --gradient-background: linear-gradient(0deg, rgba(0,28,250,0.4) 0%, rgba(2,247,230,0.4) 100%);
   --gradient: linear-gradient(90deg, rgba(0,28,250,1) 0%, rgba(2,247,230,1) 80%);
 }

@@ -39,5 +39,5 @@
 
 .split {
   display: grid;
-  grid-template-columns: 10vw 1fr;
+  grid-template-columns: 1fr 10vw;
 }

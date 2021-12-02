@@ -29,10 +29,8 @@
 
 .side_panel {
   position: fixed; 
-  top: 0;
   height: 100vh;
   width: auto;
-  left: 0;  
 }
 
 .side_item {
@@ -43,6 +41,7 @@
 }
 
 .centralize {
+  composes: title_rollover from '../utils.css';
   display: flex;
   flex-direction: column;
   margin: 5rem;
