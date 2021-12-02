@@ -42,6 +42,7 @@
 
 .centralize {
   composes: title_rollover from '../utils.css';
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 5rem;
@@ -53,7 +54,17 @@
   color: transparent;
 }
 
-.flex_side {
+.centralize:hover .drop_down{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.drop_down {
+  display: none;
+}
+
+.drop_down:hover {
 }
 
 
