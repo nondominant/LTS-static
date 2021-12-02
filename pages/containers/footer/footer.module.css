@@ -1,8 +1,9 @@
 .wrapper {
-  position: relative;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 4%, rgba(255,255,255,0) 100%);
 }
 .item {
-  margin: 2rem;
+  margin: 0rem;
+  font-family: var(--font-main);
 }
 
 .bar {

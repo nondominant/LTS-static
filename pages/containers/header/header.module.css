@@ -27,6 +27,35 @@
 
 }
 
+.side_panel {
+  position: fixed; 
+  top: 0;
+  height: 100vh;
+  width: auto;
+  left: 0;  
+}
+
+.side_item {
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+
+.centralize {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-weight: 900;
+  background: var(--gradient);
+  background-clip: text;  
+  color: transparent;
+}
+
+.flex_side {
+}
 
 
 

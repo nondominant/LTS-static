@@ -3,11 +3,11 @@ import style from './galleryPanel.module.css';
 import { QuotePanel, Gallery, Svg_Comp } from '../../components';
 
 const GalleryPanel = () => (
-  <div>
+  <div className={style.main}>
+  <div className={style.content}>
   <QuotePanel />
   <Gallery />
-    <div className={style.mysvg}>
-    </div>
+  </div>
   </div>
 );
 
