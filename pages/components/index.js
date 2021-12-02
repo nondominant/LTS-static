@@ -12,4 +12,3 @@ export { default as Linebreak } from './linebreak/Linebreak';
 export { default as FeaturePanel } from './featurePanel/FeaturePanel';
 export { default as FeaturePanel_locations } from './featurePanel_locations/FeaturePanel';
 export { default as FeaturePanel_contact } from './featurePanel_contact/FeaturePanel';
-export { default as Form } from './form/Form';

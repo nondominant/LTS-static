@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header, Footer, ContentPanel } from './containers';
-import { Form } from './components';
 
 
 export default function contact() {
@@ -8,7 +7,6 @@ export default function contact() {
     <>
     <Header />
     <ContentPanel />
-    <Form />
     <Footer />
     </>
   );
