@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <>
     <div className={style.split}>
-      <div className={style.bodygrey}>
-        <Header />
-      </div>
       <div className={style.main}>
         <ImagePanel />
         <SpaceBreak />
@@ -21,6 +18,9 @@ export default function Home() {
         <GalleryPanel />
         <SpaceBreak />
         <Footer />
+      </div>
+      <div className={style.bodygrey}>
+        <Header />
       </div>
     </div>
     </>
