@@ -1,10 +1,6 @@
 
-.header_component {
-    position: sticky;
-    top: 0;
+.default {
     width: 100%;
-    background-color: rgba(255,255,255,0.9);
-    height: 100px;
     z-index: 99;
 
     display: flex;
@@ -12,7 +8,48 @@
 
     align-items: center;
     justify-content: center;
+}
 
+.header_component {
+    composes: default;
+    position: sticky;
+    height: 100px;
+    top: 0;
+}
+
+.header_absolute {
+    composes: default;
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+}
+
+.transition {
+  animation: slide 3s ease forwards;
+}
+
+.transition_back {
+  animation: slide 3s ease backwards;
+}
+
+@keyframes slide {
+  from {
+    height: 0px;
+
+
+  }
+  to {
+    height: 100px;
+
+  }
 }
 
 .header_item {
@@ -26,6 +63,10 @@
 
 }
 
+.clear {
+  background-color: transparent;
+}
 
-
-
+.opaque {
+  background-color: rgba(255,255,255,1);
+}
