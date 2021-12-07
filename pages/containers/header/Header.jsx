@@ -1,7 +1,8 @@
-import React from 'react';
+iport React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Brand, ContactBanner, Logo, ImagePanel } from '../../components';
+import { transparent_logo } from './imports.js';
 import style from './header.module.css';
 
 
@@ -9,7 +10,7 @@ const Header = () => {
 
   const [scroll, setScroll] = useState(false);
   const [scrollStatus, setScrollStatus] = useState({
-    scrollDirection: null,
+    scrollDirection: "up",
     scrollPos: 0,
   });
 
@@ -42,40 +43,35 @@ const Header = () => {
   }
 
 
-  /**
-  const prev = usePrevious(scrollCount);
-       setScrollCount(window.scrollY);
-
-  setScrollIncrease(prev < window.scrollY);
-  setScrollDecrease(prev > window.scrollY);
-  **/
-  
-
-  function usePrevious(value) {
-    const ref = useRef();
-    useEffect(() => { //*
-      ref.current = value;
-    }, [value]); 
-    //ref.current is returned before * useEffect is updated
-    return ref.current;
-  }
   return (
-  <>
-    <div className={!scroll 
-      ? [style.header_fixed, style.clear, (scrollStatus.scrollDirection === "up" 
-        ? style.red
-        : style.blue)].join(" ")
-      : [style.header_fixed, style.opaque, (scrollStatus.scrollDirection === "up" 
-        ? style.red 
-        : style.blue)].join(" ")
-    }>
-    <div className={style.wrapper}>
-      <div className={style.header_item}><Link href="/"><a>Home</a></Link></div>
-      <div className={style.header_item}><Link href="/about"><a>About</a></Link></div>
-      <div className={style.header_item}><Link href="/contact"><a>Contact</a></Link></div>
+<>
+<div className={!scroll 
+  ? [style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
+    ? style.red
+    : style.blue)].join(" ")
+  : [style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
+    ? style.red 
+    : style.blue)].join(" ")
+}>
+
+  <div className={style.a}></div>
+  <div className={[style.header_image, style.logo_pos].join(" ")}><img className={style.image} src={transparent_logo}/></div>
+  <div className={style.d}></div>
+    <div className={[style.wrapper_grid, style.nav_pos].join(" ")}>
+      <div className={style.nav_items}>
+        <div className={style.header_item}><Link href="/"><a>Home</a></Link></div>
+        <div className={style.header_item}><Link href="/about"><a>about</a></Link></div>
+        <div className={style.header_item}><Link href="/services"><a>services</a></Link></div>
+        <div className={style.header_item}><Link href="/contact"><a>Contact</a></Link></div>
+        <div className={style.header_item}><Link href="/asia"><a>asia</a></Link></div>
+      </div>
     </div>
-    </div>
-  </>
+  <div className={style.e}></div>
+  <div className={style.login_pos}>Login</div>
+  <div className={style.c}></div>
+
+</div>
+</>
   );
 }
 

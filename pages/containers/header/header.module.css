@@ -43,9 +43,15 @@
     justify-content: center;
 }
 
+.default_grid {
+    width: 100%;
+    z-index: 99;
+    display: grid;
+}
+
 .header_fixed {
-    composes: default;
-    height: 150px;
+    composes: default_grid;
+    height: 8%;
     position: fixed;
     top: 0;
 }
@@ -59,17 +65,90 @@
   composes: transition_back;
 }
 
-.wrapper {
+.nav_items {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: auto;
   gap: 6rem;
+}
+
+.wrapper_grid {
+  display: grid;
+}
+
+
+.wrapper_flex {
+  display: flex;
+}
+
+.grid_layout {
+  grid-template-columns:  10vw 5vw 2vw 1fr 2vw 5vw 5vw;
+}
+
+.a{
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  background-color: red;
+}
+.c{
+  grid-column-start: 7;
+  grid-column-end: span 1;
+  background-color: green;
+}
+.d {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  background-color: green;
+}
+.e {
+  display: grid;
+  grid-column-start: 5;
+  grid-column-end: span 1;
+  background-color: blue;
+}
+
+.login_pos {
+  display: grid;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+
+  grid-column-start: 6;
+  grid-column-end: span 1;
+  background-color: red;
+
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: white;
+}
+
+.logo_pos {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
+
+.nav_pos {
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: span 1;
+}
+
+.clear {
+  background-color: transparent;
+}
+
+.opaque {
+  background-color: rgba(60,84,100,0.98);
 }
 
 .header_item {
   position: relative;
+  text-transform: uppercase;
   font-family: var(--font-main);
   font-size: 1.4rem;
   font-weight: 900;
@@ -77,10 +156,18 @@
   text-align: center;
   width: 100px;
 }
-.clear {
-  background-color: transparent;
+
+.header_image {
+  align-content: center;
+  justify-items: end;
+  overflow: hidden;
+  object-fit: cover;
 }
 
-.opaque {
-  background-color: rgba(100,100,100,1);
+.image {
+  width: 100px;
+  justify-items: end;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
 }

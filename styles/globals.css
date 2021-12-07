@@ -7,6 +7,8 @@ html {
   --font-aux: "Lucida Console";
   --text-color: #ffffff;
   --text-color-alt: #ff0034;
+  margin: 0;
+  padding: 0;
 }
 a { 
   color: inherit; 
@@ -16,5 +18,11 @@ a {
 div {
   width: 100%;
   margin: 0rem;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
