@@ -46,10 +46,10 @@ const Header = () => {
   return (
 <>
 <div className={!scroll 
-  ? [style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
+  ? [style.header_fat, style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red
     : style.blue)].join(" ")
-  : [style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
+  : [style.header_thin, style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red 
     : style.blue)].join(" ")
 }>

@@ -51,10 +51,35 @@
 
 .header_fixed {
     composes: default_grid;
-    height: 8%;
     position: fixed;
     top: 0;
     
+}
+
+@keyframes fat {
+  from{
+    height: 8%;
+  }
+  to{
+    height: 12%;
+  }
+}
+@keyframes thin {
+  from{
+    height: 12%;
+  }
+  to{
+    height: 8%;
+  }
+}
+
+.header_fat {
+    animation: fat 100ms linear;
+    height: 12%;
+}
+.header_thin {
+    animation: thin 100ms linear;
+    height: 8%;
 }
 
 
