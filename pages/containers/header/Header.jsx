@@ -69,7 +69,6 @@ const Header = () => {
     <div className={style.e}></div>
     <div className={style.login_pos}>
       <div className={style.login_text}><p>Login</p></div>
-      <div className={style.login_icon}></div>
     </div>
     <div className={style.c}></div>
 

@@ -86,7 +86,7 @@
 }
 
 .grid_layout {
-  grid-template-columns:  13vw 7vw 2vw 1fr 8vw 10vw 4vw;
+  grid-template-columns:  13vw 7vw 2vw 1fr 8vw 8vw 6vw;
 }
 
 .a{
@@ -125,12 +125,13 @@
   font-weight: 900;
   background-color: white;
   color: rgba(60,84,100,1);
-  border-radius: 0 0  0 1rem;
+  border-radius: 2px;
 
   align-items: center !important;
-  justify-content: center;
+  justify-content: start;
 
   border-top: solid white 10px;
+  padding-left: 1rem;
 
   height: 30px;
   flex: 9 1 0;

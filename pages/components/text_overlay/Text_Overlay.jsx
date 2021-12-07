@@ -5,17 +5,7 @@ const Text_Overlay = (props) => {
   let fontSizeLg = props.objectProps.fontLarge;
   let fontSizeSm = props.objectProps.fontSmall;
   let pad = props.objectProps.padding;
-  console.log("padding ", pad)
 
-
-  /**
-              <style jsx>{`
-                div {
-                  padding: ${pad};
-                }
-
-              `}</style>
-              **/
   return (
     <div>
       <div className={style.absolute_pos}>
