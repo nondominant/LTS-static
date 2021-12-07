@@ -1,4 +1,4 @@
-iport React from 'react';
+import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Brand, ContactBanner, Logo, ImagePanel } from '../../components';
@@ -66,9 +66,12 @@ const Header = () => {
         <div className={style.header_item}><Link href="/asia"><a>asia</a></Link></div>
       </div>
     </div>
-  <div className={style.e}></div>
-  <div className={style.login_pos}>Login</div>
-  <div className={style.c}></div>
+    <div className={style.e}></div>
+    <div className={style.login_pos}>
+      <div className={style.login_text}><p>Login</p></div>
+      <div className={style.login_icon}></div>
+    </div>
+    <div className={style.c}></div>
 
 </div>
 </>
