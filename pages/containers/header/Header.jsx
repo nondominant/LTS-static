@@ -49,13 +49,14 @@ const Header = () => {
   ? [style.header_fat, style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red
     : style.blue)].join(" ")
-  : [style.header_thin, style.header_fixed, style.grid_layout, style.opaque, (scrollStatus.scrollDirection === "up" 
+  : [style.header_thin, style.header_fixed, style.grid_layout_thin, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red 
     : style.blue)].join(" ")
 }>
 
   <div className={style.a}></div>
-  <div className={[style.header_image, style.logo_pos].join(" ")}><img className={style.image} src={transparent_logo}/></div>
+  <div className={[style.header_image, style.logo_pos].join(" ")}>
+    <img className={style.image} src={transparent_logo}/></div>
   <div className={style.d}></div>
     <div className={[style.wrapper_grid, style.nav_pos].join(" ")}>
       <div className={style.nav_items}>
@@ -63,17 +64,28 @@ const Header = () => {
         <div className={style.header_item}><Link href="/about"><a>about</a></Link></div>
         <div className={style.header_item}><Link href="/services"><a>services</a></Link></div>
         <div className={style.header_item}><Link href="/contact"><a>Contact</a></Link></div>
-        <div className={style.header_item}><Link href="/asia"><a>asia</a></Link></div>
+
+        <div id={style.asia} className={style.header_item}><Link href="/asia"><a>asia</a></Link>
+          <div className={style.asia_menu}>
+          <ul>
+            <li><p>example</p></li>
+            <li><p>example</p></li>
+            <li><p>example</p></li>
+          </ul></div>
+        </div>
+
       </div>
     </div>
     <div className={style.e}></div>
     <div className={style.login_pos}>
-      <div className={style.login_text}><p>Login</p></div>
-      <div className={style.login_menu}>
+      <div className={style.login_text}>
+        <p>Login</p>
+        <div className={style.login_menu}>
         <ul>
           <li><p>Web portal</p></li>
           <li><p>My Account</p></li>
         </ul></div>
+        </div>
     </div>
     <div className={style.c}></div>
 

@@ -58,7 +58,7 @@
 
 @keyframes fat {
   from{
-    height: 8%;
+    height: 7%;
   }
   to{
     height: 12%;
@@ -69,7 +69,7 @@
     height: 12%;
   }
   to{
-    height: 8%;
+    height: 7%;
   }
 }
 
@@ -79,7 +79,7 @@
 }
 .header_thin {
     animation: thin 100ms linear;
-    height: 8%;
+    height: 7%;
 }
 
 
@@ -111,7 +111,11 @@
 }
 
 .grid_layout {
-  grid-template-columns:  13vw 7vw 2vw 1fr 8vw 8vw 6vw;
+  grid-template-columns:  10vw 10vw 2vw 1fr 8vw 8vw 6vw;
+}
+
+.grid_layout_thin {
+  grid-template-columns:  15vw 5vw 2vw 1fr 8vw 8vw 6vw;
 }
 
 .a{
@@ -143,12 +147,13 @@
 }
 
 .login_text {
+  position: relative;
   display: flex;
 
   text-transform: uppercase;
   font-family: var(--font-main);
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 300;
   background-color: white;
   color: rgba(60,84,100,1);
   border-radius: 2px;
@@ -200,11 +205,16 @@
   position: relative;
   text-transform: uppercase;
   font-family: var(--font-main);
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: white;
   text-align: center;
   width: 100px;
+}
+
+.header_item:hover {
+  border-top: solid white 3px;
+  padding-top: 6px;
 }
 
 .header_image {
@@ -243,14 +253,31 @@
     font-size: 0;
   }
 }
+.asia_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 8vw;
+  justify-content: start;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  font-size: 0;
+  height: 0;
+}
+#asia:hover .asia_menu {
+  animation: drop_down 100ms linear;
+  display: grid;
+  font-size: 1.1rem;
+  height: 150px;
+}
 
 .login_menu {
   position: absolute;
-  top: 70%;
+  top: 100%;
+  left: 0;
   width: 8vw;
-  text-align: inherit;
   justify-content: start;
-  background-color: yellow;
+  background-color: rgba(0,0,0,0.7);
   display: none;
   font-size: 0;
   height: 0;
@@ -258,19 +285,46 @@
 
 .login_menu p {
   font-family: var(--font-main);
-  padding: 0.2rem 0.5rem 0.2rem 1.5rem ;
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem ;
+  margin-left: 0.5rem;
+  color: white;
 }
 
-.login_pos:hover .login_menu {
+.login_text:hover .login_menu {
   animation: drop_down 100ms linear;
   display: grid;
   font-size: 1.1rem;
-  height: 100px;
+  height: 150px;
 }
 
-.login_menu p:hover {
-  color: red;
+.OPTION login_menu p:hover {
   text-decoration: underline;
 }
 
+.OPTION login_menu p:hover {
+  text-decoration: underline;
+  filter: drop-shadow(0 0 0.75rem white);
+}
 
+.login_menu p:hover {
+  text-decoration: underline;
+  border-radius: 2px;
+  background-color: grey;
+}
+
+.OPTION login_menu li:hover:before {
+  color: white;
+  font-weight: 900;
+	content: ">";
+	position: absolute;
+	left: 0;
+}
+
+.OPTION login_menu li:hover:before {
+  color: white;
+  font-weight: 900;
+  position: absolute;
+	content: ">";
+  padding-top: 5px;
+	left: 2px;
+}
