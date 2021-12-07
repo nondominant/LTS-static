@@ -36,7 +36,7 @@
 
 .default {
     width: 100%;
-    z-index: 99;
+    z-index: 98;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .default_grid {
     width: 100%;
-    z-index: 99;
+    z-index: 98;
     display: grid;
 }
 
@@ -114,6 +114,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .login_text {
@@ -195,3 +196,56 @@
   width: 100%;
   object-fit: cover;
 }
+
+/** drop down menu's **/
+@keyframes drop_down {
+  from {
+    height: 0;
+    font-size: 0;
+  }
+  to {
+    height: 100px;
+    font-size: 1.1rem;
+  }
+}
+@keyframes roll_up {
+  from {
+    height: 100px;
+    font-size: 1.1rem;
+  }
+  to {
+    height: 0;
+    font-size: 0;
+  }
+}
+
+.login_menu {
+  position: absolute;
+  top: 70%;
+  width: 8vw;
+  text-align: inherit;
+  justify-content: start;
+  background-color: yellow;
+  display: none;
+  font-size: 0;
+  height: 0;
+}
+
+.login_menu p {
+  font-family: var(--font-main);
+  padding: 0.2rem 0.5rem 0.2rem 1.5rem ;
+}
+
+.login_pos:hover .login_menu {
+  animation: drop_down 100ms linear;
+  display: grid;
+  font-size: 1.1rem;
+  height: 100px;
+}
+
+.login_menu p:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+

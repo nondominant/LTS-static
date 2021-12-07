@@ -69,6 +69,11 @@ const Header = () => {
     <div className={style.e}></div>
     <div className={style.login_pos}>
       <div className={style.login_text}><p>Login</p></div>
+      <div className={style.login_menu}>
+        <ul>
+          <li><p>Web portal</p></li>
+          <li><p>My Account</p></li>
+        </ul></div>
     </div>
     <div className={style.c}></div>
 
