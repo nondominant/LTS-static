@@ -6,7 +6,7 @@ export default function contact() {
   return (
     <>
     <Header />
-    <ContentPanel />
+
     <Footer />
     </>
   );

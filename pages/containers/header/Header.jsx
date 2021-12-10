@@ -78,13 +78,7 @@ const Header = () => {
 
         <div className={style.header_item}><Link href="/contact"><a>Contact</a></Link></div>
 
-        <div id={style.asia} className={style.header_item}><Link href="/asia"><a>asia</a></Link>
-          <div className={style.asia_menu}>
-          <ul>
-            <li><p>example</p></li>
-            <li><p>example</p></li>
-            <li><p>example</p></li>
-          </ul></div>
+        <div className={style.header_item}><Link href="/asia"><a>asia</a></Link>
         </div>
 
       </div>
