@@ -13,3 +13,4 @@ export { default as FeaturePanel } from './featurePanel/FeaturePanel';
 export { default as FeaturePanel_locations } from './featurePanel_locations/FeaturePanel';
 export { default as FeaturePanel_contact } from './featurePanel_contact/FeaturePanel';
 export { default as Text_Overlay } from './text_overlay/Text_Overlay';
+export { default as Form } from './form/Form';
