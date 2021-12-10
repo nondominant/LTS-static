@@ -56,22 +56,24 @@ class Form extends React.Component {
   render() {
     return (
       <div className={style.form}>
+        <div className={style.form_wrapper}>
         <form id="contact-form" name='onSubmit={this.handleSubmit.bind(this)} method="POST"'>
           <div className={style.fieldgroup}>
-              <label className={style.label}htmlFor="name">Name</label>
+              <div id={style.div}>Name</div>
+              <div className={style.input}>
               <input 
-                className={style.inputfield}
                 type="text" 
                 name="name" 
                 className="form-control" 
                 value={this.state.name}
                 onChange={this.handleInputChange}
               />
+              </div>
           </div>
           <div className={style.fieldgroup}>
-              <label className={style.label}htmlFor="exampleInputEmail1">Email address</label>
+              <div id={style.label}>Email</div>
+              <div className={style.input}>
               <input 
-                className={style.inputfield}
                 type="email" 
                 name="email" 
                 className="form-control" 
@@ -79,11 +81,12 @@ class Form extends React.Component {
                 value={this.state.email}
                 onChange={this.handleInputChange}
               />
+              </div>
           </div>
           <div className={style.fieldgroup}>
-              <label className={style.label}htmlFor="message">Message</label>
+              <div id={style.div} htmlFor="message">Message</div>
+              <div className={style.input}>
               <textarea 
-                className={style.inputfield}
                 name="message" 
                 className="form-control" 
                 rows="5"
@@ -91,9 +94,11 @@ class Form extends React.Component {
                 onChange={this.handleInputChange}
               >
               </textarea>
+              </div>
           </div>
           <button className={style.button} type="submit" onClick={this.handleSubmit.bind(this)}>Submit</button>
         </form>
+        </div>
       </div>
     );
   }
