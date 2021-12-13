@@ -29,10 +29,13 @@ const ImagePanel = () => {
   let fontSmall = (fontFloor / 4) + "rem";
   let padding = (350 / font) + "rem";
 
+  const textLarge = "Industrial leaders in commercial laundry technology"
+  const textSmall = "designed for simplicity. Engineered through experience."
+
   return (
   <div className={style.image_panel}>
     <img className={style.image} src={img}/>
-    <Text_Overlay objectProps={{fontLarge, fontSmall, padding}} />
+    <Text_Overlay objectProps={{textLarge, textSmall, fontLarge, fontSmall, padding}} />
   </div>
   );
 };

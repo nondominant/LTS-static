@@ -5,6 +5,8 @@ const Text_Overlay = (props) => {
   let fontSizeLg = props.objectProps.fontLarge;
   let fontSizeSm = props.objectProps.fontSmall;
   let pad = props.objectProps.padding;
+  let text = props.objectProps.textLarge;
+  let tagline = props.objectProps.textSmall;
 
   return (
     <div>
@@ -18,7 +20,7 @@ const Text_Overlay = (props) => {
                   padding: ${pad};
                 }
               `}</style>
-              <p>Industrial leaders in commercial Laundry technology</p>
+              <p>{text}</p>
             </div>
             <div className={style.tagline}>
               <style jsx>{`
@@ -26,17 +28,13 @@ const Text_Overlay = (props) => {
                   font-size: ${fontSizeSm};
                 }
               `}</style>
-              <p>Designed for simplicity. Engineered through experience.</p>
+              <p>{tagline}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-
-
-
-
 }
 
 export default Text_Overlay;
