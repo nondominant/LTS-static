@@ -12,5 +12,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
+}
+
+.side_panel {
+  position: relative;
   width: 60%;
+  background: red;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+
+.b {
+
 }
