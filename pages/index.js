@@ -7,11 +7,15 @@ import { Header, Footer, ContentPanel, GalleryPanel } from './containers';
 import { Brand, QuotePanel, FeaturePanel, ImagePanel, Linebreak, FeaturePanel_locations, FeaturePanel_contact} from './components';
 
 export default function Home() {
+
+  const textLarge = "Leaders in commercial laundry technology"
+  const textSmall = "Designed for simplicity. Engineered through experience"
+
   return (
     <>
     <div className={style.main}>
     <Header />
-    <ImagePanel />
+    <ImagePanel objectProps={{textLarge, textSmall}}/>
     <div className={style.body}>
     <ContentPanel />
     </div>

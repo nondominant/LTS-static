@@ -4,7 +4,7 @@ import { img } from './imports.js';
 import style from './imagePanel.module.css';
 import { Text_Overlay } from '../../components';
 
-const ImagePanel = () => {
+const ImagePanel = (props) => {
   const [scrollStatus, setScrollStatus] = useState({
     scrollVal: 1,
   });
@@ -29,8 +29,8 @@ const ImagePanel = () => {
   let fontSmall = (fontFloor / 4) + "rem";
   let padding = (350 / font) + "rem";
 
-  const textLarge = "Industrial leaders in commercial laundry technology"
-  const textSmall = "designed for simplicity. Engineered through experience."
+  const textLarge = props.objectProps.textLarge;
+  const textSmall = props.objectProps.textSmall;
 
   return (
   <div className={style.image_panel}>
