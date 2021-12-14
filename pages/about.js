@@ -1,9 +1,11 @@
 import React from 'react';
 import { Header, Footer, ContentPanel } from './containers';
 import { RelativeLinkMenu, ImagePanel, RelativeLinkOverlay } from './components';
+import splashPanel from '../public/static/pics/830.jpg';
 import style from './index.module.css';
 
 export default function About() {
+
   const links = [
     "#company",
     "#team"
@@ -17,7 +19,7 @@ export default function About() {
     <>
     <div className={style.main}>
     <Header />
-    <ImagePanel justify="center" contentWidth="90">
+    <ImagePanel image={splashPanel} justify="center" contentWidth="90">
     <RelativeLinkOverlay names={names} links={links} />
     </ImagePanel>
     <div className={style.body}>

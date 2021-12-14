@@ -5,6 +5,7 @@ import style from './imagePanel.module.css';
 import { Text_Overlay } from '../../components';
 
 const ImagePanel = (props) => {
+  const image = (typeof props.image === 'undefined') ? img : props.image;
   const [scrollStatus, setScrollStatus] = useState({
     scrollVal: 1,
   });
@@ -26,7 +27,7 @@ const ImagePanel = (props) => {
 
   return (
   <div className={style.image_panel}>
-    <img className={style.image} src={img}/>
+    <img className={style.image} src={image}/>
     <div className={style[props.justify]}>
         <style jsx>{`
             div {
