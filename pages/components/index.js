@@ -15,3 +15,5 @@ export { default as FeaturePanel_contact } from './featurePanel_contact/FeatureP
 export { default as Text_Overlay } from './text_overlay/Text_Overlay';
 export { default as Form } from './form/Form';
 export { default as RelativeLinkMenu } from './relativeLinkMenu/RelativeLinkMenu';
+export { default as TitleImagePanel } from './titleImagePanel/TitleImagePanel';
+export { default as RelativeLinkOverlay } from './relativeLinkOverlay/RelativeLinkOverlay';

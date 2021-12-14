@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Footer, ContentPanel } from './containers';
-import { RelativeLinkMenu } from './components';
+import { RelativeLinkMenu, ImagePanel, RelativeLinkOverlay } from './components';
 import style from './index.module.css';
 
 export default function About() {
@@ -17,6 +17,9 @@ export default function About() {
     <>
     <div className={style.main}>
     <Header />
+    <ImagePanel justify="center" contentWidth="90">
+    <RelativeLinkOverlay names={names} links={links} />
+    </ImagePanel>
     <div className={style.body}>
     {/* <PageTitle id="company"/> */}
     {/* <CardPanel /> */}
@@ -30,7 +33,6 @@ export default function About() {
     {/* <FlexGallery /> */}
 
     <div>
-    <RelativeLinkMenu className={style.a} names={names} links={links} id="#company"/>
     <ContentPanel />
     <ContentPanel />
     <ContentPanel />
