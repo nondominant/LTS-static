@@ -17,3 +17,5 @@ export { default as Form } from './form/Form';
 export { default as RelativeLinkMenu } from './relativeLinkMenu/RelativeLinkMenu';
 export { default as TitleImagePanel } from './titleImagePanel/TitleImagePanel';
 export { default as RelativeLinkOverlay } from './relativeLinkOverlay/RelativeLinkOverlay';
+export { default as Slider } from './slider/Slider';
+export { default as PageTitle } from './pageTitle/PageTitle';

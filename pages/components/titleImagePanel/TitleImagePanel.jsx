@@ -9,12 +9,20 @@ const ImagePanel = (props) => {
     scrollVal: 1,
   });
 
+
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
+
+
+
   function handleScroll() {
+    console.log(JSON.stringify(scrollStatus))
     setScrollStatus(() => {
       return {
         scrollVal: window.scrollY,

@@ -39,9 +39,6 @@ export default function Home() {
     <div className={style.main}>
     <Header />
     <TitleImagePanel objectProps={{textLarge, textSmall}}/>
-    <ImagePanel justify="center" contentWidth="90">
-    <RelativeLinkOverlay names={names} links={links}/>
-    </ImagePanel>
     <div className={style.body}>
     <ContentPanel />
     </div>
