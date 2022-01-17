@@ -10,6 +10,7 @@ const PageTitle = (props) => {
 
   let text = props.objectProps.text;
   let id = props.id;
+  let width = props.objectProps.width | "100vw";
 
   return (
     <div id={id}>
