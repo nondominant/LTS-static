@@ -1,8 +1,9 @@
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   height: auto;
-  width: auto;
+  width: 100%;
   border: dashed 2px red;
   overflow: hidden;
 }
