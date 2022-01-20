@@ -1,20 +1,16 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: 100%;
   width: auto;
-  border: dashed 1px black;
-  overflow: hidden;
-}
-
-.left {
-  justify-content: flex-start;
-}
-
-.right {
-  justify-content: flex-end;
-}
-
-.center {
   justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
+
+.row {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+

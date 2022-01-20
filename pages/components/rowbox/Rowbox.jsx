@@ -1,10 +1,11 @@
 import React from 'react';
-import { useRef, useState, useEffect } from 'react';
+import {Children} from 'react';
 import style from './rowbox.module.css'
+
 const Rowbox = (props) => {
   let objProp = props.objectProps;
   let justify = props.objectProps.justify;
-
+  const arrayChildren = Children.toArray(props.children);
   return (
     <div className=
     {
@@ -20,7 +21,11 @@ const Rowbox = (props) => {
         })()
       ].join(" ")
     }>
-      {props.children}
+    {Children.map(arrayChildren, (child) => {
+        return (
+          <div className={style.col}>{child}</div>
+        );
+      })}
     </div>
   );
 }

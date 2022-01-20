@@ -1,15 +1,44 @@
 import React from 'react';                                                          
 import { Header, Footer, ContentPanel } from './containers';                        
+import {
+  Flexfold_machinerysales,
+  Exclusive_machinerysales,
+  P1_machinerysales,
+  P2_machinerysales,
+  T1_machinerysales,
+  T2_machinerysales
+} from './content';
+
+import { 
+  Spacer,
+  Rowbox,
+  Columnbox
+} from './components';
                                                                                     
                                                                                     
 export default function machinerysales() {                                                    
   return (                                                                          
     <>                                                                              
     <Header />                                                                      
-    <ContentPanel />                                                                
-    <h1>MACHINERY SALES</h1>
-    <h1>machinery sales page content goes here</h1>
-    <h1>content content content</h1>
+    <Spacer/>
+    <Rowbox objectProps={{justify: "center"}}>
+    <T1_machinerysales/>
+    </Rowbox>
+    <Rowbox objectProps={{justify: "right"}}>
+    <P1_machinerysales/>
+    </Rowbox>
+    <Rowbox objectProps={{justify: "center"}}>
+    <T2_machinerysales/>
+    </Rowbox>
+    <Rowbox objectProps={{justify: "center"}}>
+    <P2_machinerysales/>
+    </Rowbox>
+    <Rowbox objectProps={{justify: "center"}}>
+    <Exclusive_machinerysales/>
+    </Rowbox>
+    <Rowbox objectProps={{justify: "center"}}>
+    <Flexfold_machinerysales/>
+    </Rowbox>
     <Footer />                                                                      
     </>                                                                             
   );                                                                                
