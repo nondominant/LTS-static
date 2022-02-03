@@ -3,7 +3,8 @@
   composes: longshadow from './longshadow.module.css';
   font-size: 2rem;
   overflow: hidden;
-  color: rgba(60,84,100,1);
+  font-family: monospace;
+  color: white;
 }
 
 .header_small {
@@ -14,13 +15,11 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin: 2rem;
+  padding-bottom: 2rem;
   color: white;
   background-color: rgba(60,84,100,0.5);
   width: 100%;
-  transform:skew(0deg, 0deg) scaleY(1) ; 
   font-family: monospace;
-  text-shadow: 2px 0px rgba(60,84,100,1);
 }
 
 .header_large {
@@ -29,7 +28,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  background-color: rgba(100,100,100,0.3);
+  margin-bottom: -100px;
+  background-color: rgba(80,80,80,0.5);
 }
 
 .grow:hover {
@@ -48,20 +48,21 @@
   font-size: 1.5rem;
   position: relative;
   color: rgba(60,84,100,1);
-  background-color: rgba(60, 84, 100, 0.2);
+  background-color: transparent;
   margin: 2rem;
   padding: 2% 2% 2% 6%;
-  border-radius: 5px;
-  overflow: hidden;
+  border-radius: 2px;
+  border-left: solid 3px rgba(60,84,100,1);
 }
 
-.list ul li::after {
+.alternative_list ul li::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  background: rgba(60, 84, 100, 0.7);
-  width: 5%;
+  left: -10%;
+  background: linear-gradient(90deg, rgba(173,173,173,0.2) 0%, rgba(255,255,255,0.1) 49%, rgba(60,84,150,0.05) 100%);
+  transform: skew(-30deg, 0deg);
+  width: 35%;
   height: 110%;
 }
 
