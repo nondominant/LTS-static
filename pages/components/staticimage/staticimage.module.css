@@ -1,0 +1,11 @@
+.image { 
+  overflow: hidden;
+  border: solid 2px black;
+  background-color: white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ontainer img {
+  display: block;
+}

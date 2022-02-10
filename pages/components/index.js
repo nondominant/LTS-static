@@ -24,3 +24,4 @@ export { default as Rowbox } from './rowbox/Rowbox';
 export { default as Columnbox } from './columnbox/Columnbox';
 export { default as Element } from './element/Element';
 export { default as Spacer } from './spacer/Spacer';
+export { default as StaticImage } from './staticimage/StaticImage';

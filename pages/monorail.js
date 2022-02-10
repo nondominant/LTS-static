@@ -1,6 +1,8 @@
 import React from 'react';                                                          
+import style from './index.module.css';
+import cat from '../public/static/LTSimages/AT230.jpg'
 import { Header, Footer } from './containers';                        
-import { Rowbox, Columnbox, Spacer } from './components';
+import { Rowbox, Columnbox, Spacer, StaticImage } from './components';
 import { 
   TR05_title,
   TR06_title,
@@ -24,6 +26,9 @@ export default function monorail() {
           <TR05_title/>
           <TR05_desc/>
         </Columnbox>
+        <div className={style.monorail_image1}>
+          <StaticImage src={cat} />
+        </div>
       </Rowbox>
       <Rowbox objectProps={{justify: "center"}}>
         <Columnbox>
