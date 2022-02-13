@@ -17,3 +17,7 @@ export { default as T1_controlsystems } from './controlsystems/T1_controlsystems
 export { default as List_controlsystems } from './controlsystems/List_controlsystems';
 export { default as P1_controlsystems } from './controlsystems/P1_controlsystems';
 export { default as P2_controlsystems } from './controlsystems/P2_controlsystems';
+export { default as Padding_P1 } from './asia/Padding_P1';
+export { default as Padding_P2 } from './asia/Padding_P2';
+export { default as Padding_P3 } from './asia/Padding_P3';
+export { default as Introduction } from './asia/Introduction';
