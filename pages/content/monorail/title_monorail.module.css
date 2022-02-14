@@ -1,3 +1,11 @@
 .container {
-  composes: header_large from '../shared.module.css';
+  font-size: 2rem;
+  overflow: hidden;
+  font-family: monospace;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
 }

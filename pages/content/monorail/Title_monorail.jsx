@@ -4,10 +4,10 @@ const Title_monorail = () => {
 return (
   <div className={style.container}>
   <h2>
-  For all common<br/>
-  monorail parts at OEM<br/> 
-  quality at very<br/> 
-  competitive prices!<br/>
+  For all common
+  monorail parts at OEM 
+  quality at very 
+  competitive prices!
   </h2>
   </div>
 );
