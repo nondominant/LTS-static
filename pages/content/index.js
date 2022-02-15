@@ -21,3 +21,6 @@ export { default as Padding_P1 } from './asia/Padding_P1';
 export { default as Padding_P2 } from './asia/Padding_P2';
 export { default as Padding_P3 } from './asia/Padding_P3';
 export { default as Introduction } from './asia/Introduction';
+export { default as Lorem } from './about/Lorem';
+export { default as Lorem_Title } from './about/Lorem_Title';
+export { default as Peter } from './about/team/Peter';

@@ -4,9 +4,14 @@ import style from './index.module.css';
 import { useState, useEffect, useRef } from 'react';
 import { Header, Footer, ContentPanel } from './containers';
 import img1 from '../public/static/pics/378.jpg';
+import peter_photo from '../public/static/pics/378.jpg';
 import {
   Company_intro_about, 
-  Team_about
+  Team_about,
+  TR06_desc,
+  Lorem_Title,
+  Peter,
+  Lorem
 } from './content';
 import { 
   RelativeLinkMenu, 
@@ -17,7 +22,10 @@ import {
   Rowbox,
   Columnbox,
   Element,
-  PageTitle
+  PageTitle,
+  StaticImage, 
+  TeamCard,
+  Spacer, 
 } from './components';
 
 export default function About() {
@@ -40,15 +48,73 @@ export default function About() {
       <RelativeLinkOverlay names={names} links={links} />
       </ImagePanel>
       <div className={style.body}>
+
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
         <Sectionbox objectProps={{id: "company_section"}}>
-            <PageTitle objectProps={{text: "Company", size: "4"}} id="company"/> 
+          <PageTitle objectProps={{text: "Company", size: "4"}} id="company"/> 
+          <Rowbox objectProps={{justify: "center"}}>
+            <Columnbox>
+                <Lorem />
+                <Spacer />
+                <Lorem_Title />
+                <Lorem />
+                <Lorem />
+                <Lorem />
+                <Spacer />
+                <Lorem_Title />
+                <Lorem />
+                <Lorem />
+                <Spacer />
+                <Spacer />
+                <Spacer />
+                <Spacer />
+                <Spacer />
+            </Columnbox>
+          </Rowbox>
+
         </Sectionbox>
         <Sectionbox objectProps={{id: "team_section"}}>
           <PageTitle objectProps={{text: "Team", size: "4"}} id="team"/> 
           <Columnbox objectProps={{}}>
-              <Team_about/>
+            <Lorem/>
+            <Spacer />
+            <Rowbox objectProps={{justify: "center"}}>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+              <TeamCard src={peter_photo}>
+                <Peter />
+              </TeamCard>
+            </Rowbox>
           </Columnbox >
         </Sectionbox>
+        <Spacer />
+
       </div>
       <Footer />
     </div>

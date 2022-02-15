@@ -3,8 +3,7 @@
 }
 
 .paragraph {
+  composes: header_large from '../../content/shared.module.css';
   display: flex;
   justify-content: center;
-  background: grey;
-  opacity: 0.5;
 }
