@@ -1,13 +1,17 @@
 import React from 'react';                                                          
 import { Header, Footer, ContentPanel } from './containers';                        
-import img1 from '../public/static/LTSimages/tunnel.jpg';
-import splashPanel from '../public/static/LTSimages/tunnel.jpg';
+import img1 from '../public/static/LTSimages/MT200.jpg';
+import img2 from '../public/static/LTSimages/AT230.jpg';
+import img3 from '../public/static/LTSimages/BT300.jpg';
+import img4 from '../public/static/LTSimages/dryer.jpg';
+import splashPanel from '../public/static/pics/809.jpg';
 import style from './index.module.css';
 import {
   Flexfold_machinerysales,
   Exclusive_machinerysales,
   P1_machinerysales,
   P2_machinerysales,
+  P3_machinerysales,
   T1_machinerysales,
   Title_machinerysales,
   T2_machinerysales
@@ -63,8 +67,8 @@ export default function machinerysales() {
           </div>
           <div className={style.slider__relative}>
           <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
-        <ImagePanel image={splashPanel} justify="center" contentWidth="90">
-          <Title_machinerysales/>
+        <ImagePanel image={img4} justify="center" contentWidth="90">
+                <P3_machinerysales/>
         </ImagePanel>
           </div>
       </div>
@@ -80,10 +84,10 @@ export default function machinerysales() {
         <StaticImage src={img1} />
     </Columnbox>
     <Columnbox>
-        <StaticImage src={img1} />
+        <StaticImage src={img2} />
     </Columnbox>
     <Columnbox>
-        <StaticImage src={img1} />
+        <StaticImage src={img3} />
     </Columnbox>
     </Rowbox>
     <Spacer />
