@@ -18,6 +18,7 @@ import {
   Rowbox,
   StaticImage,
   ImagePanel,
+  BlockSpacer,
   Columnbox
 } from './components';
                                                                                     
@@ -54,19 +55,38 @@ export default function machinerysales() {
         <Title_machinerysales/>
       </ImagePanel>
     <div className={style.body}>
+    <BlockSpacer height="20vh" color="white"/>
       <div className={[style.slider__parent].join(" ")}>
           <div className={style.slider__child__30}>
                 <T1_machinerysales/>
                 <P1_machinerysales/>
           </div>
-          <Spacer />
-          <Spacer />
-          <Spacer />
-          <Spacer />
           <div className={style.slider__relative}>
+          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
         <ImagePanel image={splashPanel} justify="center" contentWidth="90">
           <Title_machinerysales/>
         </ImagePanel>
+          </div>
+      </div>
+      <div className={[style.slider__parent].join(" ")}>
+          <div className={style.slider__child__30}>
+                <T1_machinerysales/>
+                <P1_machinerysales/>
+          </div>
+          <div className={style.slider__relative}>
+          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
+    <Rowbox objectProps={{justify: "center"}}>
+    <Columnbox>
+        <StaticImage src={img1} />
+    </Columnbox>
+    <Columnbox>
+        <StaticImage src={img1} />
+    </Columnbox>
+    <Columnbox>
+        <StaticImage src={img1} />
+    </Columnbox>
+    </Rowbox>
+    <Spacer />
           </div>
       </div>
     </div>
