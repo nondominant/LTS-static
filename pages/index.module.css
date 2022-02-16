@@ -42,3 +42,104 @@
   background: linear-gradient(180deg, rgba(73,73,73,0.2) 0%, rgba(255,255,255,1) 100%);
   margin-bottom: 1.5rem;
 }
+
+.slider__parent {
+  height: auto !important;
+  position: relative;
+}
+
+.slider__child__20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20vh !important;
+  position: sticky !important;
+  top: 20vh !important;
+  width: 100%;
+  background: transparent;
+}
+.slider__child__30 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 30vh !important;
+  position: sticky !important;
+  top: 20vh !important;
+  width: 100%;
+  background: transparent;
+}
+.slider__child__40 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40vh !important;
+  position: sticky !important;
+  top: 20vh !important;
+  width: 100%;
+  background: transparent;
+}
+.slider__child__50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh !important;
+  position: sticky !important;
+  top: 20vh !important;
+  width: 100%;
+  background: transparent;
+}
+.slider__child__60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh !important;
+  position: sticky !important;
+  top: 20vh !important;
+  width: 100%;
+  background: transparent;
+}
+
+.slider__absolute {
+  position: absolute;
+  top: 70vh;
+}
+.slider__relative {
+  position: relative;
+  top: 0;
+}
+
+.parallax {
+  position: relative;
+  perspective: 1px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer__base {
+  transform: translatez(0) scale(3);
+  background: rgba(255,0,0,0.3);
+}
+
+.parallax__layer__back {
+  transform: translateZ(-1px) scale(2);
+  background: rgba(0,255,0,0.3);
+
+}
+
+.green {
+  background: green;
+}

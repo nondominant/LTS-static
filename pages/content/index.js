@@ -11,6 +11,7 @@ export { default as T1_machinerysales } from './machinerysales/T1_machinerysales
 export { default as T2_machinerysales } from './machinerysales/T2_machinerysales';
 export { default as P1_machinerysales } from './machinerysales/P1_machinerysales';
 export { default as P2_machinerysales } from './machinerysales/P2_machinerysales';
+export { default as Title_machinerysales } from './machinerysales/Title_machinerysales';
 export { default as Exclusive_machinerysales } from './machinerysales/Exclusive_machinerysales';
 export { default as Flexfold_machinerysales } from './machinerysales/Flexfold_machinerysales';
 export { default as T1_controlsystems } from './controlsystems/T1_controlsystems';

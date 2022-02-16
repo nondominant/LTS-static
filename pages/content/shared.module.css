@@ -7,6 +7,14 @@
 }
 
 .header_small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgba(60,84,100,1);
+  width: 100%;
+  font-family: monospace;
+  background:green;
 }
 
 .header_medium h3{
