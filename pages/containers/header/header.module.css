@@ -195,6 +195,8 @@
 }
 
 .logo_pos {
+}
+.logo_pos_bk {
   display: grid;
   grid-column-start: 2;
   grid-column-end: span 1;
@@ -232,12 +234,8 @@
 }
 
 .image {
-  width: 100px;
-  justify-items: end;
-  overflow: hidden;
-  width: 100%;
-  object-fit: cover;
-  background-color: rgba(60,84,100,1);
+  width: 300px;
+  height: auto;
 }
 
 /** drop down menu's **/
@@ -439,26 +437,26 @@
 /*hide the inputs/checkmarks and submenu*/
 .naviGAYtion {
   display: flex;
-  border: solid purple 3px;
 }
-.naviGAYtion div:last-child {
+.naviGAYtion div:nth-child(7) {
   display: flex;
   justify-content: flex-end;
-  border: solid red 5px;
   flex-shrink: 1;
   align-items: center;
-  padding: 1rem;
 
-  background: blue !important;
+}
+.naviGAYtion div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  flex-shrink: 1;
+  align-items: center;
 }
 .naviGAYtion div {
   position: relative;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border: black solid 3px;
-  flex-shrink: 2;
+  flex-shrink: 3;
 }
 
 .column {
@@ -476,8 +474,9 @@
   position: relative;
   display: flex;
   cursor: pointer;
-  border: solid white 2px;
-  background: green;
+  font-size: 1.3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .naviGAYtion input {
@@ -487,16 +486,19 @@
 .naviGAYtion input:checked ~ .submenu{
   position: absolute;
   top: 100%;
+  left: 0;
 
-  display: block;
+  display: flex;
+  flex-direction: column;
+  background: white;
 
 }
 
 
 .naviGAYtion li{
   display: flex;
-  justify-content: flex-end;
-  border: yellow solid 3px;
+  justify-content: flex-start;
+  font-size: 1.3rem;
 }
 
 .naviGAYtion input:checked ~ .subsubmenu{
@@ -505,14 +507,14 @@
 
   display: flex;
   flex-direction: column;
-  background: pink;
+}
 
-
+.submenu:last-child label{
+  justify-content: flex-end;
 }
 
 .close {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding-top: 1rem;
-  padding-right: 4rem;
 }

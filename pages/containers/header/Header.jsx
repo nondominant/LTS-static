@@ -56,6 +56,8 @@ const Header = () => {
 
 
   <div className={style.naviGAYtion}>
+  <div className={[style.header_image, style.logo_pos].join(" ")}>
+    <img className={style.image} src={transparent_logo}/></div>
     <div>
       <input type="radio" name="menu" id="check01" />
       <label for="check01">Menu</label>
@@ -139,13 +141,19 @@ const Header = () => {
       </ul>
     </div>
     <div>
+    </div>
+    <div>
       <input type="radio" name="menu" id="check03" />
       <label for="check03">Menu</label>
       <ul className={style.submenu}>
         <li><a href="#">Item 1</a></li>
         <li><a href="#">Item 2</a></li>
+
+        <li>
         <input type="radio" name="menu" id="close" />
         <label className={style.close} for="close">close</label>
+        </li>
+
       </ul>
     </div>
   </div>
