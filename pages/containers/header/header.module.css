@@ -56,6 +56,13 @@
     
 }
 
+.fixed {
+    width: 80vw;
+    z-index: 98;
+    position: fixed;
+    top: 0;
+}
+
 @keyframes fat {
   from{
     height: 7%;
@@ -428,22 +435,48 @@
 	display: inline-flex; 
 }
 
+
 /*hide the inputs/checkmarks and submenu*/
-.inputA {
+.naviGAYtion {
   display: flex;
-  background: pink;
+  border: solid purple 3px;
+}
+.naviGAYtion div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  border: solid red 5px;
+  flex-shrink: 1;
+  align-items: center;
+  padding: 1rem;
+
+  background: blue !important;
+}
+.naviGAYtion div {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: black solid 3px;
+  flex-shrink: 2;
+}
+
+.column {
+  flex-direction: column;
+
 }
 
 
-.naviGAYtion ul { 
+.naviGAYtion ul, .naviGAYtion input { 
   display: none;
 }
 
 /*position the label*/
 .naviGAYtion label {
   position: relative;
-  display: block;
+  display: flex;
   cursor: pointer;
+  border: solid white 2px;
   background: green;
 }
 
@@ -451,10 +484,35 @@
 }
 
 /*show the submenu when input is checked*/
-.naviGAYtion input:checked {
+.naviGAYtion input:checked ~ .submenu{
+  position: absolute;
+  top: 100%;
+
   display: block;
+
 }
 
-.naviGAYtion input:checked {
-  transform: scale(2);
+
+.naviGAYtion li{
+  display: flex;
+  justify-content: flex-end;
+  border: yellow solid 3px;
+}
+
+.naviGAYtion input:checked ~ .subsubmenu{
+  position: relative;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  background: pink;
+
+
+}
+
+.close {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1rem;
+  padding-right: 4rem;
 }
