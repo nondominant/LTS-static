@@ -1,6 +1,0 @@
-.container {
-  composes: paragraph from '../shared.module.css';
-padding: 4px;
-margin: 4px;
-text-align: justify;
-}

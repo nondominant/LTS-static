@@ -1,3 +1,0 @@
-.container {
-  composes: paragraph from '../shared.module.css';
-}

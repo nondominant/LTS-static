@@ -1,6 +1,0 @@
-.container {
-  composes: header_large from '../shared.module.css';
-padding: 4px;
-margin: 4px;
-text-align: justify;
-}

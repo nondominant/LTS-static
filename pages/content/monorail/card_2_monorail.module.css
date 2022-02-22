@@ -1,5 +1,0 @@
-.container {
-  composes: list from '../shared.module.css';
-  composes: header_medium from '../shared.module.css';
-}
-

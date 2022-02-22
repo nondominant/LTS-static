@@ -1,4 +1,0 @@
-call search("container", "W")
-:normal o
-:normal i text-align: justify; 
-:normal ZZ

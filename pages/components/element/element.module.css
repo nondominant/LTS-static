@@ -1,8 +1,0 @@
-.container {
-  display: flex;
-  background-color: rgba(255,200,200,0.5);
-  width: 10vw;
-  height: 10vh;
-  border: solid 2px white;
-  flex-shrink: 2;
-}
