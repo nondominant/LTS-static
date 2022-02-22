@@ -1,12 +1,12 @@
 import React from 'react';                                                          
-import {Rowbox, Columnbox, Spacer } from './components';
+import {Rowbox, Columnbox, Spacer } from '../js/components';
 import {
   P2_controlsystems,
   P1_controlsystems,
   List_controlsystems,
   T1_controlsystems
-} from './content';
-import { Header, Footer } from './containers';                        
+} from '../js/content';
+import { Header, Footer } from '../js/containers';                        
                                                                                     
                                                                                     
 export default function controlsystems() {                                                    

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import style from './index.module.css';
 
-import { Header, Footer, ContentPanel, GalleryPanel } from './containers';
+import { Header, Footer, ContentPanel, GalleryPanel } from '../js/containers';
 import { 
   Brand, 
   QuotePanel, 
@@ -15,7 +15,7 @@ import {
   Text_Overlay,
   RelativeLinkOverlay,
   FeaturePanel_contact
-} from './components';
+} from '../js/components';
 
 export default function Home() {
 

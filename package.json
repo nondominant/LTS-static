@@ -1,9 +1,12 @@
 {
-  "name": "modern-ui-nextjs",
+  "name": "hostinger-react",
+  "homepage": "http://livetestdeployment.link",
+  "version": "1.0.0",
+  "description": "static site built in react",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "DISABLE_ESLINT=true next build",
     "start": "next start",
     "lint": "next lint"
   },
