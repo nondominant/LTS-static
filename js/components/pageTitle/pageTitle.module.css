@@ -1,0 +1,9 @@
+.absolute_pos {
+  padding: 0;
+}
+
+.paragraph {
+  composes: header_large from '../../content/shared.module.css';
+  display: flex;
+  justify-content: center;
+}

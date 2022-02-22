@@ -1,0 +1,3 @@
+.container {
+  composes: header_large from '../shared.module.css';
+}

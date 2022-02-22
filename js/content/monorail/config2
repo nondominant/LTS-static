@@ -1,0 +1,3 @@
+call search("padding", "W")
+:normal dd
+:normal ZZ

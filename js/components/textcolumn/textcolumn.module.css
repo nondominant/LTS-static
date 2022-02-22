@@ -1,0 +1,12 @@
+.container ul li {
+  font-size: 1rem;
+  position: relative;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+
+}
+
+.container {
+  max-width: 30vw;
+}

@@ -1,5 +1,5 @@
 import React from 'react';                                                          
-import { Header, Footer, ContentPanel } from './containers';                        
+import { Header, Footer, ContentPanel } from '../js/containers';                        
                                                                                     
                                                                                     
 export default function spareparts() {                                                    

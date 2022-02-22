@@ -2,7 +2,7 @@ import React from 'react';
 import splashPanel from '../public/static/pics/830.jpg';
 import style from './index.module.css';
 import { useState, useEffect, useRef } from 'react';
-import { Header, Footer, ContentPanel } from './containers';
+import { Header, Footer, ContentPanel } from '../js./js/containers';
 import img1 from '../public/static/pics/378.jpg';
 import peter_photo from '../public/static/pics/378.jpg';
 import {
@@ -12,7 +12,7 @@ import {
   Lorem_Title,
   Peter,
   Lorem
-} from './content';
+} from '../js/content';
 import { 
   RelativeLinkMenu, 
   ImagePanel, 
@@ -26,7 +26,7 @@ import {
   StaticImage, 
   TeamCard,
   Spacer, 
-} from './components';
+} from '../js/components';
 
 export default function About() {
 

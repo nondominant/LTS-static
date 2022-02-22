@@ -3,7 +3,7 @@ import style from './index.module.css';
 import railcarriage from '../public/static/LTSimages/railcarriage.jpg'
 import railroller from '../public/static/LTSimages/railroller.jpg'
 import splashPanel from '../public/static/LTSimages/rail02.jpg'
-import { Header, Footer } from './containers';                        
+import { Header, Footer } from '../js/containers';                        
 import { 
   Rowbox, 
   Columnbox, 
@@ -11,7 +11,7 @@ import {
   StaticImage, 
   Slider,
   ImagePanel, 
-} from './components';
+} from '../js/components';
 import { 
   TR05_title,
   TR06_title,
@@ -19,7 +19,7 @@ import {
   TR06_desc,
   Title_monorail,
   Card_2_monorail, 
-  Card_1_monorail } from './content';
+  Card_1_monorail } from '../js/content';
 
 export default function monorail() {                                                    
   return (                                                                          

@@ -1,5 +1,5 @@
 import React from 'react';                                                          
-import { Header, Footer, ContentPanel } from './containers';                        
+import { Header, Footer, ContentPanel } from '../js/containers';                        
 import img1 from '../public/static/LTSimages/MT200.jpg';
 import img2 from '../public/static/LTSimages/AT230.jpg';
 import img3 from '../public/static/LTSimages/BT300.jpg';
@@ -15,7 +15,7 @@ import {
   T1_machinerysales,
   Title_machinerysales,
   T2_machinerysales
-} from './content';
+} from '../js/content';
 
 import { 
   Spacer,
@@ -24,7 +24,7 @@ import {
   ImagePanel,
   BlockSpacer,
   Columnbox
-} from './components';
+} from '../js/components';
                                                                                     
 /**
  * 

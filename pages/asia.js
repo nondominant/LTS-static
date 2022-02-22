@@ -1,12 +1,12 @@
 import React from 'react';
-import { Header, Footer, ContentPanel } from './containers';
-import { Rowbox, Columnbox, Spacer, StaticImage } from './components';
+import { Header, Footer, ContentPanel } from '../js/containers';
+import { Rowbox, Columnbox, Spacer, StaticImage } from '../js/components';
 import { 
   Padding_P1,
   Padding_P2,
   Padding_P3,
   Introduction,
-  } from './content';
+  } from '../js/content';
 
 
 export default function asia() {
