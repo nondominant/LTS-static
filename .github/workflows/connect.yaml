@@ -1,0 +1,11 @@
+name: connection Workflow
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: Connect
+    runs-on: debian-latest
+    steps:
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2.3.1
+
