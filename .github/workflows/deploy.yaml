@@ -1,0 +1,28 @@
+name: Deployment Workflow
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: debian-latest
+    steps:
+      - name: SSH to server
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: w3novices.com
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /path/to/your/repository/root
+            eval `ssh-agent -s`
+            ssh-add ~/.ssh/id_keyid
+            git pull origin master
+            git status
+            export PATH=/home/${{ secrets.SSH_USERNAME }}/.nvm/versions/node/v14.17.0/bin:/usr/bin:/bin;
+            yarn install
+            rm -rf .next
+            yarn build
+            pm2 restart yourappname
