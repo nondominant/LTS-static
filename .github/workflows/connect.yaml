@@ -1,7 +1,6 @@
 name: connection Workflow
 on:
-  push:
-    branches: [master]
+  workflow_dispatch:
 jobs:
   deploy:
     name: Connect
