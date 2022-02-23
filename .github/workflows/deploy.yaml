@@ -1,7 +1,7 @@
 name: Deployment Workflow
 on:
   push:
-    branches: [master]
+    branches: [FEB-file-structure]
 
 jobs:
   deploy:
