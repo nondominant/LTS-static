@@ -8,10 +8,5 @@ jobs:
     runs-on: debian-latest
     steps:
       - name: Install SSH Key
-        uses: nondominant/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          name: id_rsa # optional
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-          config: ${{ secrets.CONFIG }} # ssh_config; optional
-          if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
+        uses: shimataro/ssh-key-action@v2.3.1
+
