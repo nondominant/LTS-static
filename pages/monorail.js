@@ -68,6 +68,9 @@ export default function monorail() {
       </Slider>
     </Rowbox>
   </div>
+  <Spacer/>
+  <Spacer/>
+  <Spacer/>
   <Footer/>
 </div>
     </>                                                                             
