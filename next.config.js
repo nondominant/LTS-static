@@ -6,8 +6,5 @@ module.exports = withImages({
   eslint: {
     ignoreDuringBuilds: true,
   }
-  eslint: {
-    ignoreDuringBuilds: true,
-  }
   
 })
