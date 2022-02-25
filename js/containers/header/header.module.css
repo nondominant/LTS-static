@@ -511,16 +511,16 @@
 
 }
 .naviGAYtion input:checked ~ .force_left{
-  position: absolute !important;
-  top: 100% !important;
   right: 0 !important;
+  width: 100%;
+}
+.force_left .close{
+  display: flex;
+  font-family: var(--font-main);
+  background: rgba(60,84,100, 0.7);
+  justify-content: center !important;
   width: 100% !important;
-  white-space: nowrap !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-end !important;
-  background: white !important;
+  color: white;
 
 }
 

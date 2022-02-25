@@ -121,9 +121,6 @@ const Header = () => {
 
 
 <div>
-</div>
-
-  <div>
   <input type="radio" name="menu" id="check6" />
   <label htmlFor="check6">
   <div className={style.header_item}>Login</div>
@@ -132,11 +129,14 @@ const Header = () => {
   <li>Client Portal</li>
   <li>Web Shop</li>
   <li></li>
-  <li>
+  <div>
   <input type="radio" name="menu" id="close" />
   <label className={style.close} htmlFor="close">close</label>
-  </li>
+  </div>
   </ul>
+</div>
+
+  <div>
   </div>
 </div>
 
