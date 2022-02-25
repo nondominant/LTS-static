@@ -16,20 +16,20 @@ import {
 } from '../js/components';
 
 import {
-  P2_plantrelocation,
-  P1_plantrelocation,
-  T1_plantrelocation,
-  T2_plantrelocation,
+  P2_REPLACE,
+  P1_REPLACE,
+  T1_REPLACE,
+  T2_REPLACE,
 } from '../js/content';
 
-export default function plantrelocation() {                                                    
+export default function REPLACE() {                                                    
   return ( 
 <>                                                                              
   <div className={style.main}>
     <Header /> 
       <ImagePanel image={splashPanel} justify="center" contentWidth="90">
 
-        <T1_plantrelocation/>
+        <T1_REPLACE/>
 
       </ImagePanel>
       <div className={style.body}>
@@ -37,14 +37,14 @@ export default function plantrelocation() {
       <div className={[style.slider__parent].join(" ")}>
         <div className={style.slider__child__30}>
 
-          <P1_plantrelocation/>
+          <P1_REPLACE/>
 
         </div>
         <div className={style.slider__relative}>
           <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
           <ImagePanel image={img4} justify="center" contentWidth="90">
     
-          <T2_plantrelocation/>
+          <T2_REPLACE/>
 
           </ImagePanel>
         </div>
@@ -52,7 +52,7 @@ export default function plantrelocation() {
       <div className={[style.slider__parent].join(" ")}>
         <div className={style.slider__child__30}>
 
-          <P1_plantrelocation/>
+          <P1_REPLACE/>
 
         </div>
         <div className={style.slider__relative}>

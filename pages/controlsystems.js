@@ -1,40 +1,82 @@
 import React from 'react';                                                          
-import {Rowbox, Columnbox, Spacer } from '../js/components';
+
+import img1 from '../public/static/LTSimages/MT200.jpg';
+import img2 from '../public/static/LTSimages/AT230.jpg';
+import img3 from '../public/static/LTSimages/BT300.jpg';
+import img4 from '../public/static/LTSimages/dryer.jpg';
+import splashPanel from '../public/static/pics/809.jpg';
+import style from './index.module.css';
+import { Header, Footer } from '../js/containers';                        
+import { 
+  Spacer,
+  Rowbox,
+  StaticImage,
+  ImagePanel,
+  BlockSpacer,
+  Columnbox
+} from '../js/components';
+
 import {
   P2_controlsystems,
   P1_controlsystems,
   List_controlsystems,
   T1_controlsystems
 } from '../js/content';
-import { Header, Footer } from '../js/containers';                        
                                                                                     
                                                                                     
 export default function controlsystems() {                                                    
   return (                                                                          
-    <>                                                                              
-    <Header />                                                                  
-    <Spacer/>
-    <Rowbox objectProps={{justify: "right"}}>
-    <T1_controlsystems/>
-    </Rowbox>
+<>                                                                              
+  <div className={style.main}>
+    <Header /> 
+      <ImagePanel image={splashPanel} justify="center" contentWidth="90">
 
-    <Rowbox objectProps={{justify: "right"}}>
-    <List_controlsystems/>
-    </Rowbox>
-    <Spacer/>
-    <Spacer/>
-    <Spacer/>
-    <Spacer/>
+        <T1_controlsystems/>
 
-    <Rowbox objectProps={{justify: "right"}}>
-    <P1_controlsystems/>
-    </Rowbox>
+      </ImagePanel>
+      <div className={style.body}>
+      <BlockSpacer height="20vh" color="white"/>
+      <div className={[style.slider__parent].join(" ")}>
+        <div className={style.slider__child__30}>
 
-    <Rowbox objectProps={{justify: "right"}}>
-    <P2_controlsystems/>
-    </Rowbox>
+          <P1_controlsystems/>
 
-    <Footer />                                                                      
-    </>                                                                             
+        </div>
+        <div className={style.slider__relative}>
+          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
+          <ImagePanel image={img4} justify="center" contentWidth="90">
+    
+          <P2_controlsystems/>
+
+          </ImagePanel>
+        </div>
+      </div>
+      <div className={[style.slider__parent].join(" ")}>
+        <div className={style.slider__child__30}>
+
+          <List_controlsystems/>
+
+        </div>
+        <div className={style.slider__relative}>
+          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
+          <Rowbox objectProps={{justify: "center"}}>
+            <Columnbox>
+              <StaticImage src={img1} />
+            </Columnbox>
+            <Columnbox>
+              <StaticImage src={img2} />
+            </Columnbox>
+            <Columnbox>
+              <StaticImage src={img3} />
+            </Columnbox>
+          </Rowbox>
+          <Spacer />
+        </div>
+      </div>
+    </div>
+    <Footer /> 
+  </div>
+
+</>                                                                             
   );                                                                                
 }    

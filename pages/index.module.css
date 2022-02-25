@@ -46,6 +46,7 @@
 .slider__parent {
   height: auto !important;
   position: relative;
+  background: white;
 }
 
 .slider__child__20 {
@@ -112,6 +113,9 @@
   position: relative;
   top: 0;
   background: transparent;
+}
+.opaque__white {
+  background: white;
 }
 
 .parallax {
