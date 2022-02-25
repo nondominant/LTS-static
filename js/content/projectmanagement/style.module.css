@@ -1,0 +1,12 @@
+.t1_projectmanagement {
+composes: paragraph from '../shared.module.css';
+}
+.t2_projectmanagement {
+composes: paragraph from '../shared.module.css';
+}
+.p1_projectmanagement {
+composes: paragraph from '../shared.module.css';
+}
+.p2_projectmanagement {
+composes: paragraph from '../shared.module.css';
+}

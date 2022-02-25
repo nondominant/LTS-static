@@ -1,0 +1,12 @@
+.t1_installations {
+composes: paragraph from '../shared.module.css';
+}
+.t2_installations {
+composes: paragraph from '../shared.module.css';
+}
+.p1_installations {
+composes: paragraph from '../shared.module.css';
+}
+.p2_installations {
+composes: paragraph from '../shared.module.css';
+}

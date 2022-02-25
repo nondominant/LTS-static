@@ -1,0 +1,12 @@
+.t1_plantrelocation {
+composes: paragraph from '../shared.module.css';
+}
+.t2_plantrelocation {
+composes: paragraph from '../shared.module.css';
+}
+.p1_plantrelocation {
+composes: paragraph from '../shared.module.css';
+}
+.p2_plantrelocation {
+composes: paragraph from '../shared.module.css';
+}

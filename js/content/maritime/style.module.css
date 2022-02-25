@@ -1,0 +1,12 @@
+.t1_maritime {
+composes: paragraph from '../shared.module.css';
+}
+.t2_maritime {
+composes: paragraph from '../shared.module.css';
+}
+.p1_maritime {
+composes: paragraph from '../shared.module.css';
+}
+.p2_maritime {
+composes: paragraph from '../shared.module.css';
+}
