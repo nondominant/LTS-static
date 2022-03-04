@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { img } from './imports.js';
 import style from './titleImagePanel.module.css';
@@ -42,7 +43,7 @@ const ImagePanel = (props) => {
 
   return (
   <div className={style.image_panel}>
-    <img className={style.image} src={img}/>
+    <Image className={style.image} src={img} alt='factory' width='3140' height='2160'/>
     <Text_Overlay objectProps={{textLarge, textSmall, fontLarge, fontSmall, padding}} />
   </div>
   );
