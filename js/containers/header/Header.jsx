@@ -59,7 +59,7 @@ const Header = () => {
 <div className={style.naviGAYtion}>
 
   <div className={style.header_image}>
-    <Image src={transparent_logo} alt='laundry tech solutions logo' width='1850' height='350'/>
+    <Image placeholder='blur' src={transparent_logo} alt='laundry tech solutions logo' width='1850' height='350'/>
   </div>
 
 
