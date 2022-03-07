@@ -2,11 +2,10 @@ import React from 'react';
 import style from './text_Overlay.module.css';
 
 const Text_Overlay = (props) => {
-  let fontSizeLg = props.objectProps.fontLarge;
-  let fontSizeSm = props.objectProps.fontSmall;
-  let pad = props.objectProps.padding;
   let text = props.objectProps.textLarge;
   let tagline = props.objectProps.textSmall;
+  let scale = props.objectProps.scale;
+  let opacity = scale - 0.2;
 
   return (
     <div>
@@ -16,8 +15,8 @@ const Text_Overlay = (props) => {
             <div className={style.paragraph}>
               <style jsx>{`
                 p {
-                  font-size: ${fontSizeLg};
-                  padding: ${pad};
+                  transform: scale(${scale});
+                  opacity: ${opacity};
                 }
               `}</style>
               <p>{text}</p>
@@ -25,7 +24,8 @@ const Text_Overlay = (props) => {
             <div className={style.tagline}>
               <style jsx>{`
                 p {
-                  font-size: ${fontSizeSm};
+                  transform: scale(${scale});
+                  opacity: ${opacity};
                 }
               `}</style>
               <p>{tagline}</p>

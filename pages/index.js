@@ -40,10 +40,6 @@ export default function Home() {
     <Header />
     <TitleImagePanel objectProps={{textLarge, textSmall}}/>
     <div className={style.body}>
-    <ContentPanel />
-    </div>
-    <Linebreak />
-    <div className={style.body}>
     <GalleryPanel />
     </div>
     <Linebreak />

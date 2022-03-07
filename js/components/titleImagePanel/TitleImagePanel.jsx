@@ -23,7 +23,6 @@ const ImagePanel = (props) => {
 
 
   function handleScroll() {
-    console.log(JSON.stringify(scrollStatus))
     setScrollStatus(() => {
       return {
         scrollVal: window.scrollY,
@@ -31,12 +30,7 @@ const ImagePanel = (props) => {
     });
   }
 
-  const fontSize = 5.5;
-  const font = 10 * (fontSize - (fontSize * (scrollStatus.scrollVal / 500)));
-  const fontFloor = (font > 0) ? (Math.floor(font)) / 10 : 0;
-  let fontLarge = fontFloor + "rem";
-  let fontSmall = (fontFloor / 4) + "rem";
-  let padding = (350 / font) + "rem";
+  let scale = 1 / (1 + (scrollStatus.scrollVal / 300));
 
   const textLarge = props.objectProps.textLarge;
   const textSmall = props.objectProps.textSmall;
@@ -44,7 +38,7 @@ const ImagePanel = (props) => {
   return (
   <div className={style.image_panel}>
     <Image placeholder='empty' className={style.image} src={img} alt='factory' width='3140' height='2160' priority/>
-    <Text_Overlay objectProps={{textLarge, textSmall, fontLarge, fontSmall, padding}} />
+    <Text_Overlay objectProps={{textLarge, textSmall, scale}} />
   </div>
   );
 };
