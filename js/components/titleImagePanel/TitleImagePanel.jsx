@@ -43,7 +43,7 @@ const ImagePanel = (props) => {
 
   return (
   <div className={style.image_panel}>
-    <Image placeholder='blur' className={style.image} src={img} alt='factory' width='3140' height='2160' priority/>
+    <Image placeholder='empty' className={style.image} src={img} alt='factory' width='3140' height='2160' priority/>
     <Text_Overlay objectProps={{textLarge, textSmall, fontLarge, fontSmall, padding}} />
   </div>
   );

@@ -47,29 +47,26 @@ const Header = () => {
   return (
 <>
 <div className={!scroll 
-  ? [style.header_fat, style.header_fixed, style.opaque, (scrollStatus.scrollDirection === "up" 
+  ? [style.header_fat, style.fixed, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red
     : style.blue)].join(" ")
-  : [style.header_thin, style.header_fixed, style.opaque, (scrollStatus.scrollDirection === "up" 
+  : [style.header_thin, style.fixed, style.opaque, (scrollStatus.scrollDirection === "up" 
     ? style.red 
     : style.blue)].join(" ")
 }>
 
-
-<div className={style.naviGAYtion}>
-
-  <div className={style.header_image}>
-    <Image placeholder='blur' src={transparent_logo} alt='laundry tech solutions logo' width='1850' height='350'/>
+<div className={style.first_wrapper}>
+  <div className={!scroll ? style.logo_large : style.logo_small}>
+  <Image src={transparent_logo} alt='laundry tech solutions logo' width='1850' height='350' />
   </div>
 
-
+<div className={style.naviGAYtion}>
   <div>
   <input type="radio" name="menu" id="check01" />
   <label htmlFor="check01">
   <div className={style.header_item}><Link href="/"><a>Home</a></Link></div>
   </label>
   </div>
-
   <div>
   <input type="radio" name="menu" id="check2" />
     <label htmlFor="check2">
@@ -78,7 +75,6 @@ const Header = () => {
     </div>
     </label>
   </div>
-
   <div>
   <input type="radio" name="menu" id="check3" />
     <label htmlFor="check3">
@@ -98,28 +94,27 @@ const Header = () => {
   <li></li>
   <li></li>
   <li></li>
-
   <div>
   <input type="radio" name="menu" id="close" />
   <label className={style.close} htmlFor="close">close</label>
   </div>
   </ul>
   </div>
-
   <div>
   <input type="radio" name="contact" id="check4" />
   <label htmlFor="check4">
   <div className={style.header_item}><Link href="/contact"><a>Contact</a></Link></div>
   </label>
   </div>
-
   <div>
   <input type="radio" name="asia" id="check5" />
   <label htmlFor="check5">
   <div className={style.header_item}><Link href="/asia"><a>Asia</a></Link></div>
   </label>
   </div>
-
+  
+  <div>
+  </div>
 
 <div>
   <input type="radio" name="menu" id="check6" />
@@ -137,11 +132,10 @@ const Header = () => {
   </ul>
 </div>
 
-  <div>
-  </div>
 </div>
 
 
+  </div>
 </div>
 </>
   );
