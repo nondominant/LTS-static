@@ -22,58 +22,46 @@ import {
   T2_projectmanagement,
 } from '../js/content';
 
-export default function projectmanagement() {                                                    
+export default function $NAMELOWER() {                                                    
   return ( 
 <>                                                                              
   <div className={style.main}>
     <Header /> 
       <ImagePanel image={splashPanel} justify="center" contentWidth="90">
-
         <T1_projectmanagement/>
-
       </ImagePanel>
       <div className={style.body}>
       <BlockSpacer height="20vh" color="white"/>
-      <div className={[style.slider__parent].join(" ")}>
-        <div className={style.slider__child__30}>
-
+        <div className={[style.slider__parent].join(" ")}>
+          <div className={style.slider__child__30}>
           <P1_projectmanagement/>
-
-        </div>
-        <div className={style.slider__relative}>
-          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
+          </div>
+          <div className={style.slider__relative}>
+          <BlockSpacer color="linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);" height="300px"/>
+          <div className={style.opaque__white}>
           <ImagePanel image={img4} justify="center" contentWidth="90">
-    
           <T2_projectmanagement/>
-
           </ImagePanel>
-        </div>
-      </div>
-      <div className={[style.slider__parent].join(" ")}>
-        <div className={style.slider__child__30}>
-
-          <P1_projectmanagement/>
-
-        </div>
-        <div className={style.slider__relative}>
-          <BlockSpacer color="linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 47%);" height="500px"/>
+          <P2_projectmanagement/>
+          <BlockSpacer color="transparent;" height="500px"/>
           <Rowbox objectProps={{justify: "center"}}>
-            <Columnbox>
-              <StaticImage src={img1} />
-            </Columnbox>
-            <Columnbox>
-              <StaticImage src={img2} />
-            </Columnbox>
-            <Columnbox>
-              <StaticImage src={img3} />
-            </Columnbox>
+          <Columnbox>
+            <StaticImage src={img1} />
+          </Columnbox>
+          <Columnbox>
+            <StaticImage src={img2} />
+          </Columnbox>
+          <Columnbox>
+            <StaticImage src={img3} />
+          </Columnbox>
           </Rowbox>
           <Spacer />
+          </div>
+        </div>
         </div>
       </div>
-    </div>
-    <Footer /> 
-  </div>
+  <Footer /> 
+</div>
 </>                                                                             
   ); 
 }    

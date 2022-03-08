@@ -30,10 +30,6 @@ export { default as Introduction } from './asia/Introduction';
 export { default as Lorem } from './about/Lorem';
 export { default as Lorem_Title } from './about/Lorem_Title';
 export { default as Peter } from './about/team/Peter';
-export { default as T1_maritime } from './maritime/T1_maritime';
-export { default as T2_maritime } from './maritime/T2_maritime';
-export { default as P1_maritime } from './maritime/P1_maritime';
-export { default as P2_maritime } from './maritime/P2_maritime';
 export { default as T1_plantrelocation } from './plantrelocation/T1_plantrelocation';
 export { default as T2_plantrelocation } from './plantrelocation/T2_plantrelocation';
 export { default as P1_plantrelocation } from './plantrelocation/P1_plantrelocation';
@@ -46,3 +42,7 @@ export { default as T1_projectmanagement } from './projectmanagement/T1_projectm
 export { default as T2_projectmanagement } from './projectmanagement/T2_projectmanagement';
 export { default as P1_projectmanagement } from './projectmanagement/P1_projectmanagement';
 export { default as P2_projectmanagement } from './projectmanagement/P2_projectmanagement';
+export { default as T1_maritime } from './maritime/T1_maritime';
+export { default as T2_maritime } from './maritime/T2_maritime';
+export { default as P1_maritime } from './maritime/P1_maritime';
+export { default as P2_maritime } from './maritime/P2_maritime';

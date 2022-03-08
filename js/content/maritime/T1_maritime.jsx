@@ -3,7 +3,6 @@ import React from 'react';
 const T1_maritime = () => {
 return (
 <div className={style.t1_maritime}>
-  <p>Maritime Services</p>
 </div>
 );
 }

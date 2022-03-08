@@ -1,6 +1,6 @@
 create a new page with " . webpage.sh monorail " to create a page called monorail.js
 this will create the default page with content consisting of two titles (T1_monorail.jsx, T2_monorail.jsx) and two paragraphs. The content resides in js/content/monorail and inherits style from js/content/style.module.css which itself inherits from js/content/shared.module.css
 
-to add content to this page use " . snippet.sh T3_monorail " to create a additional title called T3_monorail
+to add content to this page use " . snippet.sh T3_monorail monorail" to create a additional title called T3_monorail
 
 remember to add T3_monorail to your imports before you try to use it

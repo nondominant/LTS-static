@@ -75,17 +75,9 @@ export default function machinerysales() {
           </Rowbox>
           <Spacer />
           </div>
-
-
-
-
-
-
         </div>
         </div>
-
       </div>
-
   <Footer /> 
 </div>
 </> 
