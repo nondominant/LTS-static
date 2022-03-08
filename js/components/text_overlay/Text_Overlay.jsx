@@ -5,7 +5,7 @@ const Text_Overlay = (props) => {
   let text = props.objectProps.textLarge;
   let tagline = props.objectProps.textSmall;
   let scale = props.objectProps.scale;
-  let opacity = scale - 0.2;
+  let opacity = scale - 0.1;
 
   return (
     <div>

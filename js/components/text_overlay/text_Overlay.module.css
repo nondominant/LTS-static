@@ -1,4 +1,4 @@
-.text_pos {                                                                         
+.ext_pos {                                                                         
   height: 100%;                                                                     
   position: relative;                                                               
   background-color: transparent;                                                    
@@ -8,36 +8,48 @@
   justify-content: center;                                                          
 }                                                                                   
                                                                                     
+.text_pos {                                                                         
+  height: 100%;                                                                     
+  position: relative;                                                               
+  background-color: transparent;                                                    
+  display: flex;                                                                    
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+
+  justify-content: center;                                                          
+  align-content: center;
+
+}                                                                                   
+                                                                                    
 .paragraph {                                                                        
-  display: grid;                                                                    
-  grid-row-start: 2;                                                                
-  grid-row-end: span 1;                                                             
-  grid-column-start: 2;                                                             
-  grid-column-end: span 1;                                                          
-  align-content: end;                                                               
+
+  display: flex;                                                                    
+  justify-content: center;
+
   font-family: var(--font-main);                                                    
   text-align: center;                                                               
-  /**text-transform: uppercase;**/                                                  
   background-color: transparent;                                                            
-  font-size: 5rem;
+  font-size: 6rem;
+
   font-weight: 500;                                                                 
   color: white;                                                                     
   padding: 0;                                                                       
-  margin-bottom: -6rem;                                                             
 }                                                                                   
-                                                                                    
+
 .tagline {                                                                          
-  display: grid;                                                                    
-  grid-row-start: 3;                                                                
-  grid-row-end: span 1;                                                             
-  grid-column-start: 2;                                                             
-  grid-column-end: span 1;                                                          
+  text-shadow: #e0e0e0 1px 1px 0;
+
+  display: flex;                                                                    
+  justify-content: center;
+
   font-family: var(--font-secondary);                                               
   background-color: transparent;                                                    
   text-align: center;                                                               
+  font-size: 2rem;
+
   color: white;                                                                     
   padding: 0;                                                                       
-  margin-top: -8rem;                                                                        
 }                                                                                   
  .absolute_pos {                                                                 
   position: absolute;                                                           
