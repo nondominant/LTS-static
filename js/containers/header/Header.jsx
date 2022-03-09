@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Columnbox, Brand, ContactBanner, Logo, ImagePanel, Rowbox } from '../../components';
@@ -57,7 +56,7 @@ const Header = () => {
 
 <div className={style.first_wrapper}>
   <div className={!scroll ? style.logo_large : style.logo_small}>
-  <Image src={transparent_logo} alt='laundry tech solutions logo' width='1850' height='350' />
+  <img src={transparent_logo} alt='laundry tech solutions logo' />
   </div>
 
 <div className={style.naviGAYtion}>
