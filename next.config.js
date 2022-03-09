@@ -1,8 +1,7 @@
 const withImages = require('next-images')
 module.exports = withImages({
     images: {
-    loader: 'imgix',
-    path: '/',
+      disableStaticImages: false,
   },
   eslint: {
     ignoreDuringBuilds: true,
