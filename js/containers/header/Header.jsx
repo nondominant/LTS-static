@@ -67,14 +67,7 @@ const Header = () => {
   <div className={style.header_item}><Link href="/"><a>Home</a></Link></div>
   </label>
   </div>
-  <div>
-  <input type="radio" name="menu" id="check2" />
-    <label htmlFor="check2">
-    <div className={style.header_item}>
-      <Link href="/about"><a>About</a></Link>
-    </div>
-    </label>
-  </div>
+
   <div>
   <input type="radio" name="menu" id="check3" />
     <label htmlFor="check3">
@@ -100,6 +93,15 @@ const Header = () => {
   </div>
   </ul>
   </div>
+  <div>
+  <input type="radio" name="menu" id="check2" />
+    <label htmlFor="check2">
+    <div className={style.header_item}>
+      <Link href="/about"><a>About</a></Link>
+    </div>
+    </label>
+  </div>
+
   <div>
   <input type="radio" name="contact" id="check4" />
   <label htmlFor="check4">

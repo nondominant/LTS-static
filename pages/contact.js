@@ -7,8 +7,6 @@ export default function contact() {
   return (
     <>
     <Header />
-    <Slider />
-    <ContentPanel />
     <Form />
     <Footer />
     </>
